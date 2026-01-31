@@ -105,18 +105,3 @@ public class DialogManager : MonoBehaviour
         nextNode = null;
     }
 }
-
-[CreateAssetMenu(fileName = "DialogNode", menuName = "Dialog/Dialog Node")]
-public class DialogNode : ScriptableObject
-{
-    [TextArea(3, 10)]
-    public string text;
-    public DialogChoice[] choices; // Wenn leer -> einfach weiter
-    public DialogNode nextNode; // Für lineare Dialoge
-}
-[Serializable]
-public class DialogChoice
-{
-    public string choiceText;
-    public DialogNode nextNode;
-}
