@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "DialogNode", menuName = "Dialog/Dialog Node")]
